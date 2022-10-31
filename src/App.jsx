@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import NavigationBar from './Components/NavigationBar/NavigationBar';
-import MakePost from './Components/Make Post/MakePost';
+import CreatePostsForm from './Components/CreatePostForm/CreatePostsForm';
 import PostLists from './Components/PostsList/PostsList';
-import './App.css';
 
 function App() {
 
-  const [postEntries, setPostEntries] = useState([]);
+  const [postEntries, setPostEntries] = useState([{name: 'Armando', post: 'Test Post'}]);
 
   const addNewPost = post => {
     let newPosts = [...postEntries, post];
@@ -14,15 +13,15 @@ function App() {
   }
 
   return (
-    <div className='App'>
+    <div>
       <div>
         <NavigationBar />
       </div>
       <div>
-        <MakePost addPost={addNewPost}/>
+        <CreatePostsForm addPost={addNewPost}/>
       </div>
       <div>
-        <PostLists />
+        <PostLists groupPosts={postEntries}/>
       </div>
     </div>
   );

@@ -3,8 +3,10 @@ import './NavigationBar.css'
 
 const NavigationBar = (props) => {
     return (  
-        <nav className='nav-bar'>
-            <h1 className='nav-text'>Social<small className='text-muted feed-text'>Feed</small></h1>
+        <nav className='nav-bar shadow-sm'>
+            <h1 className='nav-text'>Social
+            <small className='text-muted feed-text'>Feed</small>
+            </h1>
         </nav>
     );
 }

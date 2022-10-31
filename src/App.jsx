@@ -5,7 +5,7 @@ import PostLists from './Components/PostsList/PostsList';
 
 function App() {
 
-  const [postEntries, setPostEntries] = useState([{name: 'Armando', post: 'Test Post'}]);
+  const [postEntries, setPostEntries] = useState([{name: '', post: ''}]);
 
   const addNewPost = post => {
     let newPosts = [...postEntries, post];

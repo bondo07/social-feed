@@ -1,6 +1,6 @@
-// import React, { useState } from 'react';
-import Posts from '../Posts/Posts';
 import { Container, ListGroup, ListGroupItem } from 'react-bootstrap';
+import Posts from '../Posts/Posts';
+import './PostsList.css'
 
 const PostLists = (props) => {
 
@@ -8,7 +8,7 @@ const PostLists = (props) => {
 
 
     return ( 
-        <Container>
+        <Container className='postslists-container'>
             <ListGroup>
                 <ListGroupItem>
                     {props.groupPosts.map((posts) =>{

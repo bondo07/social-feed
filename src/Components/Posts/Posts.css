@@ -1,0 +1,10 @@
+.posts-bottom {
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-spacing {
+    align-self: flex-end;
+   
+}

@@ -1,20 +1,23 @@
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
 import LikeAndDislike from '../LikeAndDislike/LikeAndDislike';
+import './Posts.css'
 
 
 const Posts = (props) => {
     
     return ( 
-        <ListGroup>
+        <ListGroup className='posts-bottom'>
             <h4>
                 <ListGroupItem>{props.post.name} </ListGroupItem>
             </h4>
             <div>
                 <ListGroupItem>{props.post.post} </ListGroupItem>
             </div>
-            <div>
-                <LikeAndDislike/>
-            </div>
+            <ListGroup className='button-spacing'>
+                <div>
+                    <LikeAndDislike/>
+                </div>
+            </ListGroup>
         </ListGroup>
      );
 }

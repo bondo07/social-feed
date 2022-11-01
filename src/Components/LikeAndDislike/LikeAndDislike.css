@@ -26,3 +26,7 @@
     width: 70px;
     height: 20px;
 }
+
+.button-spacing {
+    display: flex;
+}

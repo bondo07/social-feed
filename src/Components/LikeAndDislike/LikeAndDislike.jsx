@@ -24,8 +24,8 @@ const LikeAndDislike = (props) => {
         }
     }
     return (  
-        <div>
-            <div >
+        <div className='button-spacing'>
+            <div>
                 <button className={likeButton} onClick={handleLikeClick} type='button'>Like</button>
             </div>
             <div >

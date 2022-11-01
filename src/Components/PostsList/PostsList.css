@@ -1,0 +1,12 @@
+.postslists-container {
+    display: flex;
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 29em;
+    flex-direction: column;
+    background-color: white;
+}

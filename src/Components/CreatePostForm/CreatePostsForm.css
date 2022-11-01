@@ -9,6 +9,7 @@
     margin-left: 29em;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
 }
 
 .input-label {

@@ -13,6 +13,7 @@ const LikeAndDislike = (props) => {
         else {
             setLikeButton('static-button')
         }
+        setDislikeButton('static-button')
     }
 
     function handleDislikeClick() {
@@ -22,6 +23,7 @@ const LikeAndDislike = (props) => {
         else {
             setDislikeButton('static-button')
         }
+        setLikeButton('static-button')
     }
     return (  
         <div className='button-spacing'>
